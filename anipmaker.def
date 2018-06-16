@@ -1,0 +1,5 @@
+LIBRARY anipmaker
+
+EXPORTS
+	GetOutputPluginTable @1
+
