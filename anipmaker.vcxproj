@@ -95,7 +95,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk;include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -112,7 +112,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk;include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -131,7 +131,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk;include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -152,7 +152,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\aviutl_plugin_sdk;include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -166,10 +166,16 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="anipmaker.c" />
+    <ClCompile Include="anipmaker.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="anipmaker.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.hpp" />
+    <ClInclude Include="settings.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

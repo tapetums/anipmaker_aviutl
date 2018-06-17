@@ -1,5 +1,4 @@
-LIBRARY anipmaker
+LIBRARY anipmaker.auo
 
 EXPORTS
 	GetOutputPluginTable @1
-
